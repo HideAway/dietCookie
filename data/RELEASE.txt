@@ -1,0 +1,53 @@
+********************
+* v1.1 - 2013/01/12
+********************
+[en]
+Bug Fix : Crash bug on add White List / show White List.
+Bug Fix : Can remove permanently White List. ( Parent URL is "*" )
+Bug Fix : often hide window under taskbar. (for Windows Users)
+
+[jp]
+バグ修正 ： ホワイトリスト作成時、参照時にクラッシュするときがあったので修正。
+バグ修正 ： "*" を使ったホワイトリストが削除できなかったのを修正
+バグ修正 ： しばしばクッキーウィンドウ、ホワイトリストウィンドウが Windows のタスクバーの後ろに隠れていたのを修正。(for Windows Users)
+
+********************
+* v1.0 - 2013/01/08
+********************
+
+[en]
+closed tab? Moved other site? -> Delete Cookie. 
+
+* How to use White List.
+Will automaticaly add "." on first-letter.
+www.example.com -> .www.example.com
+but this is not bug. 
+Will affect on "http://www.example.com".
+
+Ex.1
+Parent URL : .mozilla.org
+Child URL : .persona.org
+if you leave .persona.org but you keep .mozilla.org in tabs , dones not delete .persona.org 's cookie.
+
+Ex.2
+Parent URL : *
+Child URL : .persona.org
+if you want to keep permanently , use "*" in Parent URL
+
+[jp]
+URLから移動したりタブを閉じると Cookieが削除されます。
+
+*White List の使い方
+URLの先頭に"."が自動で付きます。
+www.example.com の場合は .www.example.com
+と表示されますがバグではありません。
+WhiteListとしてもきちんと http://www.example.com に反応します。
+
+例1：
+Parent URL : .mozilla.org
+Child URL : .persona.org
+上記の例だとpersona.orgから移動してもmozilla.orgのタブがあればpersona.orgのクッキーは削除されません。
+例2：
+Parent URL : *
+Child URL : .persona.org
+dietCookie によって削除されません。

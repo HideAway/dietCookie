@@ -27,11 +27,6 @@ window.addEventListener("click", function(evt){
 /**************************/
 /** Cookie List Listener **/
 /**************************/
-self.port.on("added-WhiteList" , function([pUrl , cUrl]){
-	$("#parent").val('');
-	$("#child").val('');
-});
-
 self.port.on("reflesh-Cookie-start" , function(){
 	rowNum = 0;
 	$(".dietCookie-proposedList").empty();
